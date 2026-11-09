@@ -94,6 +94,23 @@ body{background:#141514;color:#e6e6e3}
 .fim .btn{border-color:var(--tinta)}
 .fim .btn:hover,.fim .btn:focus-visible{background:var(--tinta);color:#fff;border-color:var(--tinta)}
 .foot{background:#0d0e0d;color:#9a9a95;padding:28px 6vw;font-size:14px}
+
+.cta{margin-top:28px}
+.sw3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:44px 0 0}
+.chip{border:1px solid #2c2e2c;background:#1d1f1e;display:flex;flex-direction:column}
+.chip i{display:block;height:150px}
+.chip .bd{padding:22px 22px 26px}
+.chip h3{font:700 24px/1.15 var(--h);margin:0 0 8px;color:#f2f2ef}
+.chip p{margin:0;font-size:16px;color:#bdbdb8}
+.chip .st{display:block;font:500 13px var(--b);letter-spacing:.08em;text-transform:uppercase;color:var(--verde);margin-bottom:8px}
+.duo{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:36px}
+.split{display:grid;gap:40px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:center}
+.ph.dk{background:#1a1c1a;color:#a9a9a4;border-color:rgba(230,230,227,.3)}
+.r219m{aspect-ratio:21/9}
+@media(max-width:640px){.r219m{aspect-ratio:4/3}}
+.brig{background:#0d0e0d}
+.brig3{display:grid;gap:14px;grid-template-columns:2fr 1fr 1fr;margin-top:36px}
+@media(max-width:760px){.brig3{grid-template-columns:1fr}}
 </style></head><body>
 <input type="checkbox" id="nav" aria-label="Abrir menu">
 <header class="head">
@@ -121,37 +138,62 @@ body{background:#141514;color:#e6e6e3}
 </nav>
 
 <main>
-<section class="sec hero"><div class="in">
- <span class="eyebrow">Lançamento · Linha Cinzas da Floresta</span>
- <h1>A floresta em pó, <em>agora na sua mão.</em></h1>
- <p class="lead">Canetas feitas com pigmento de cinzas de florestas queimadas no Brasil. Cada traço reaproveita a cinza de um incêndio e mantém a pauta das queimadas na mão de quem escreve e desenha.</p>
- <a class="btn pri" href="#canetas">Conhecer as canetas</a><a class="btn" href="#kit">Ver o kit</a>
-</div></section>
+<section class="hero" style="padding:0">
+ <div class="ph dk r219m" style="border-radius:0;border-left:0;border-right:0;border-top:0" role="img" aria-label="Canetas e frasconetes de cinzas espalhados">FOTO IMG_8242: canetas e frasconetes espalhados (abertura)<small>crédito: ____</small></div>
+ <div class="sec" style="padding-top:64px;padding-bottom:84px"><div class="in">
+  <span class="eyebrow">Lançamento · Linha Cinzas da Floresta</span>
+  <h1>A floresta em pó, <em>agora na sua mão.</em></h1>
+  <p class="lead">Canetas feitas com pigmento de cinzas de florestas queimadas no Brasil. Cada traço reaproveita a cinza de um incêndio e mantém a pauta das queimadas na mão de quem escreve e desenha.</p>
+  <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+ </div></div>
+</section>
 <div class="band">A floresta em pó pela floresta em pé.</div>
 
 <section class="sec" id="canetas"><div class="in">
  <p class="eyebrow">Três cinzas, três biomas</p>
- <h2 style="color:#f2f2ef">As canetas</h2>
+ <h2 style="color:#f2f2ef">Cada cor tem uma floresta por trás.</h2>
  <p class="lead" style="color:#cfcfca">Do cinza prateado do Pantanal ao carvão profundo do Cerrado, e uma cor nova: a Amazônia El Niño.</p>
- <div class="pens">
-  <article class="card"><div class="sw" style="background:#2b2b29"></div><div class="ph" role="img" aria-label="Caneta Carvão Cerrado">FOTO: Caneta Carvão Cerrado</div><div class="bd"><span class="st">Cinzas do Cerrado</span><h3>Carvão Cerrado</h3><p>A cor mais escura da linha. Um cinza profundo, quase carvão.</p><a class="btn" href="https://mundano.com.br/produtos/caneta-carvao-cerrado/" aria-disabled="true">Em breve</a></div></article>
-  <article class="card"><div class="sw" style="background:#b9bbb8"></div><div class="ph" role="img" aria-label="Caneta Cinza Pantanal">FOTO: Caneta Cinza Pantanal</div><div class="bd"><span class="st">Cinzas do Pantanal</span><h3>Cinza Pantanal</h3><p>A cor mais clara da linha. Um cinza suave e prateado.</p><a class="btn" href="https://mundano.com.br/produtos/caneta-cinza-pantanal/" aria-disabled="true">Em breve</a></div></article>
-  <article class="card"><div class="sw" style="background:#7a6a5c"></div><div class="ph" role="img" aria-label="Caneta Amazônia El Niño">FOTO: Caneta Amazônia El Niño</div><div class="bd"><span class="st">Cor nova · Cinzas da Amazônia</span><h3>Amazônia El Niño</h3><p>Cinzas de uma floresta amazônica queimada em incêndio provocado por raio e alimentado pelo super El Niño.</p><a class="btn" href="https://mundano.com.br/produtos/caneta-amazonia-el-nino/" aria-disabled="true">Em breve</a></div></article>
+ <div class="sw3">
+  <article class="chip"><i style="background:#2b2b29"></i><div class="bd"><span class="st">Cinzas do Cerrado</span><h3>Carvão Cerrado</h3><p>A cor mais escura da linha. Um cinza profundo, quase carvão.</p></div></article>
+  <article class="chip"><i style="background:#b9bbb8"></i><div class="bd"><span class="st">Cinzas do Pantanal</span><h3>Cinza Pantanal</h3><p>A cor mais clara da linha. Um cinza suave e prateado.</p></div></article>
+  <article class="chip"><i style="background:#7a6a5c"></i><div class="bd"><span class="st">Cor nova · Cinzas da Amazônia</span><h3>Amazônia El Niño</h3><p>Cinzas de uma floresta amazônica queimada em incêndio provocado por raio e alimentado pelo super El Niño.</p></div></article>
  </div>
+ <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+</div></section>
+
+<section class="sec" style="background:#101110"><div class="in split">
+ <div class="ph dk r34" role="img" aria-label="Mão segurando as canetas">FOTO IMG_8244: mão segurando as canetas (escala e uso)<small>crédito: ____</small></div>
+ <div>
+  <p class="eyebrow">Do tamanho da sua mão</p>
+  <h2 style="color:#f2f2ef">Cinza de floresta, na ponta dos dedos.</h2>
+  <p style="color:#cfcfca">Canetas para usar, não para guardar. Cabem na mão de quem desenha e de quem escreve, e levam para o papel o mesmo material que Mundano usa nos murais do Cinzas da Floresta.</p>
+  <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+ </div>
+</div></section>
+
+<section class="sec"><div class="in">
+ <p class="eyebrow">Feito para quem cria</p>
+ <h2 style="color:#f2f2ef">Se você desenha, escreve ou anota, a cinza vai junto.</h2>
+ <p class="lead" style="color:#cfcfca">Ilustração, caderno, croqui, carta. Cada traço é pequeno, e leva a pauta das queimadas para onde você já cria.</p>
+ <div class="duo">
+  <div class="ph dk r43" role="img" aria-label="Mãos com canetas">FOTO IMG_8248: mãos com canetas<small>crédito: ____</small></div>
+  <div class="ph dk r43" role="img" aria-label="Mãos com canetas">FOTO IMG_8252: mãos com canetas<small>crédito: ____</small></div>
+ </div>
+ <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
 </div></section>
 
 <section class="sec kit" id="kit"><div class="in">
  <p class="eyebrow" style="color:#6f5f17">Kit de lançamento</p>
  <h2>Duas canetas, quatro biomas.</h2>
- <div class="grid g2">
+ <div class="split">
   <div>
    <ul>
     <li><b>2 canetas:</b> Carvão Cerrado e Cinza Pantanal</li>
     <li><b>4 frasconetes de cinzas:</b> Amazônia, Pantanal, Cerrado e Mata Atlântica</li>
    </ul>
-   <a class="btn" href="https://mundano.com.br/produtos/kit-cinzas-da-floresta/" aria-disabled="true" style="border-color:var(--tinta)">Em breve</a>
+   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/" style="border-color:var(--tinta);margin-top:0">Ver o kit</a>
   </div>
-  <div class="ph r43" role="img" aria-label="Kit Cinzas da Floresta">FOTO: kit completo<small>crédito: ____</small></div>
+  <div class="ph r34" role="img" aria-label="Caneta pendurada">FOTO IMG_8225: caneta pendurada (detalhe, precisa de retoque no fundo)<small>crédito: ____</small></div>
  </div>
 </div></section>
 
@@ -164,13 +206,25 @@ body{background:#141514;color:#e6e6e3}
   <div><b>A cinza vira pigmento.</b><p>O mesmo material que Mundano usa nos murais do Cinzas da Floresta vira a tinta das canetas.</p></div>
   <div><b>Você desenha com ela.</b><p>Cada linha leva a pauta das queimadas para o papel e para a conversa.</p></div>
  </div>
- <div class="ph r169" style="margin-top:44px;background:#1a1c1a;color:#a9a9a4;border-color:rgba(230,230,227,.3)" role="img" aria-label="Coleta de cinzas">FOTO: coleta das cinzas com brigadistas<small>crédito: ____</small></div>
+ <div class="ph dk r169" style="margin-top:44px" role="img" aria-label="Brigadistas">FOTO BRIGADISTAS 1: coleta das cinzas, imagem larga<small>crédito: ____</small></div>
+</div></section>
+
+<section class="sec brig"><div class="in">
+ <p class="eyebrow">Quem apaga o fogo</p>
+ <h2 style="color:#f2f2ef">Os brigadistas estão por trás de cada frasco.</h2>
+ <p class="lead" style="color:#cfcfca">São eles que entram nas áreas queimadas, e é com o apoio deles que as cinzas chegam às canetas. O Cinzas da Floresta existe para mostrar o que o fogo deixa e quem trabalha para evitá-lo.</p>
+ <div class="brig3">
+  <div class="ph dk r169" role="img" aria-label="Brigadistas">FOTO BRIGADISTAS 2: brigadistas em campo<small>crédito: ____</small></div>
+  <div class="ph dk r34" role="img" aria-label="Brigadistas">FOTO BRIGADISTAS 3<small>crédito: ____</small></div>
+  <div class="ph dk r34" role="img" aria-label="Brigadistas">FOTO BRIGADISTAS 4<small>crédito: ____</small></div>
+ </div>
+ <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
 </div></section>
 
 <section class="sec fim"><div class="in">
- <h2>Quer saber quando abre?</h2>
- <p class="lead">Enquanto as canetas não entram na loja, veja as obras e a história por trás do projeto.</p>
- <a class="btn" href="https://mundano.com.br/cinzas-da-floresta/">Ver a categoria na loja</a><a class="btn" href="/">Conhecer a trajetória</a>
+ <h2>A floresta em pó pela floresta em pé.</h2>
+ <p class="lead">Leve a cinza de uma floresta para o seu traço, e conheça a história por trás do projeto.</p>
+ <a class="btn" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a><a class="btn" href="/">Conhecer a trajetória</a>
 </div></section>
 </main>
 <footer class="foot">Mundano · Parede Viva</footer>
