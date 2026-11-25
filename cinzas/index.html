@@ -84,6 +84,11 @@ body{background:#141514;color:#e6e6e3}
 .kit li{padding:14px 0;border-bottom:1px solid #c9c9c4;font-size:19px}
 .kit li b{font-family:var(--h)}
 .kit .ph{color:#555}
+.prod2{display:grid;gap:48px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:40px}
+.prod2 h3{font:700 28px/1.15 var(--h);margin:26px 0 6px;color:var(--tinta)}
+.prod2 p{font-size:17px;margin:18px 0 0}
+.prod2 ul{margin:0}
+.prod2 .btn{border-color:var(--tinta);margin-top:24px}
 .como{background:#101110}
 .steps{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:40px;counter-reset:s}
 .steps div{counter-increment:s;border-top:2px solid var(--verde);padding-top:16px}
@@ -111,8 +116,6 @@ body{background:#141514;color:#e6e6e3}
 .foto{display:block;width:100%;height:auto}.foto img{display:block;width:100%;height:100%;object-fit:cover}img.foto{object-fit:cover}
 @media(max-width:640px){.r219m{aspect-ratio:4/3}}
 .brig{background:#0d0e0d}
-.gal3{display:grid;gap:14px;grid-template-columns:repeat(3,1fr);margin-top:36px}
-@media(max-width:760px){.gal3{grid-template-columns:1fr 1fr}.gal3 img:last-child{display:none}}
 .brig3{display:grid;gap:14px;grid-template-columns:2fr 1fr 1fr;margin-top:36px;align-items:start}
 .cred{margin:0}.cred figcaption{font-size:13px;color:#8f8f8a;margin-top:8px}
 @media(min-width:761px){.brig3 .cred img{height:340px;aspect-ratio:auto}}
@@ -139,12 +142,7 @@ body{background:#141514;color:#e6e6e3}
  <div class="sw3">
   <article class="chip"><i style="background:#2b2b29"></i><div class="bd"><span class="st">Cinzas do Cerrado</span><h3>Carvão Cerrado</h3><p>A mais escura da linha. Quase preto.</p></div></article>
   <article class="chip"><i style="background:#b9bbb8"></i><div class="bd"><span class="st">Cinzas do Pantanal</span><h3>Cinza Pantanal</h3><p>A mais clara da linha. Um cinza que puxa para o prata.</p></div></article>
-  <article class="chip"><i style="background:#7a6a5c"></i><div class="bd"><span class="st">Cor nova · Cinzas da Amazônia</span><h3>Amazônia El Niño</h3><p>Cinza de floresta amazônica queimada num incêndio que começou com um raio e cresceu com o super El Niño.</p></div></article>
- </div>
- <div class="gal3">
-  <img class="foto r34" src="img/prod-caneta.jpg" width="1086" height="1448" alt="Caneta Cinzas da Floresta na cor Carvão Cerrado" loading="lazy">
-  <img class="foto r34" src="img/prod-marcadores.jpg" width="1086" height="1448" alt="Quatro canetas Cinzas da Floresta enfileiradas" loading="lazy">
-  <img class="foto r34" src="img/prod-frascos.jpg" width="1086" height="1448" alt="Canetas e frasconetes de cinza com os nomes dos biomas" loading="lazy">
+  <article class="chip"><i style="background:#7a6a5c"></i><div class="bd"><span class="st">Cor nova · Cinzas da Amazônia</span><h3>Amazônia El Niño</h3><p>Cinza de floresta amazônica queimada num incêndio que começou com um raio e cresceu com o super El Niño. Só na caneta avulsa.</p></div></article>
  </div>
  <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
 </div></section>
@@ -169,17 +167,29 @@ body{background:#141514;color:#e6e6e3}
 </div></section>
 
 <section class="sec kit" id="kit"><div class="in">
- <p class="eyebrow" style="color:#6f5f17">Kit de lançamento</p>
- <h2>Duas canetas, quatro biomas.</h2>
- <div class="split">
-  <div>
+ <p class="eyebrow" style="color:#6f5f17">Lançamento</p>
+ <h2>Duas formas de levar a cinza.</h2>
+ <div class="prod2">
+  <article>
+   <img class="foto r34" src="img/kit-biomas.jpg" width="1086" height="1448" alt="Caneta Cinzas da Floresta com frasconetes de cinza do Cerrado, Pantanal, Amazônia e Mata Atlântica" loading="lazy">
+   <h3>Kit Cinzas da Floresta</h3>
    <ul>
     <li><b>2 canetas:</b> Carvão Cerrado e Cinza Pantanal</li>
-    <li><b>4 frasconetes de cinzas:</b> Amazônia, Pantanal, Cerrado e Mata Atlântica</li>
+    <li><b>4 frasconetes</b> com amostras de cinza da Amazônia, do Pantanal, do Cerrado e da Mata Atlântica</li>
    </ul>
-   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/" style="border-color:var(--tinta);margin-top:0">Ver o kit</a>
-  </div>
-  <img class="foto r34" src="img/kit-biomas.jpg" width="1086" height="1448" alt="Caneta Cinzas da Floresta com quatro frasconetes de cinza do Cerrado, Pantanal, Amazônia e Mata Atlântica" loading="lazy">
+   <p>Os frasconetes só vêm no kit. Cada um guarda uma amostra do crime ambiental: cinza recolhida em áreas que queimaram.</p>
+   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver o kit</a>
+  </article>
+  <article>
+   <img class="foto r34" src="img/prod-marcadores.jpg" width="1086" height="1448" alt="Canetas Cinzas da Floresta enfileiradas" loading="lazy">
+   <h3>Canetas avulsas</h3>
+   <ul>
+    <li><b>3 cores:</b> Carvão Cerrado, Cinza Pantanal e Amazônia El Niño</li>
+    <li><b>Amazônia El Niño</b> só existe na caneta avulsa</li>
+   </ul>
+   <p>Para quem quer escolher a cor ou completar a coleção.</p>
+   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+  </article>
  </div>
 </div></section>
 
