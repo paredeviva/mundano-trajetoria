@@ -3,7 +3,8 @@
 <title>Sobre Mundano | Artivista</title>
 <meta name="description" content="Mundano é artivista, nascido em São Paulo em 1986. Fundou o Pimp My Carroça, o Cataki e o Cinzas da Floresta. TED Fellow e integrante do comitê diretor do Global Artivism.">
 <link rel="canonical" href="https://trajetoria.mundano.com.br/">
-<meta property="og:title" content="Sobre Mundano | Artivista"><meta property="og:type" content="website"><meta property="og:url" content="https://trajetoria.mundano.com.br/">
+<link rel="alternate" hreflang="pt-BR" href="https://trajetoria.mundano.com.br/"><link rel="alternate" hreflang="en" href="https://trajetoria.mundano.com.br/?lang=en">
+<meta property="og:title" content="Sobre Mundano | Artivista"><meta property="og:type" content="website"><meta property="og:url" content="https://trajetoria.mundano.com.br/"><meta property="og:image" content="https://trajetoria.mundano.com.br/img/operarios-brumadinho.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 <style>
@@ -18,6 +19,9 @@ a{color:inherit}
 .head svg{width:22px;height:22px;fill:var(--tinta);display:block}
 .head .logo img{height:60px;width:auto;display:block}
 .head label{cursor:pointer;display:flex}
+.lang{font:500 14px/1 var(--b);letter-spacing:.06em;color:var(--tinta);background:transparent;border:2px solid var(--tinta);padding:8px 10px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.lang svg{width:16px;height:16px}
+.lang:hover,.lang:focus-visible{background:var(--tinta);color:var(--verde)}.lang:hover svg,.lang:focus-visible svg{fill:var(--verde)}
 #nav{position:absolute;opacity:0;pointer-events:none}
 .drawer{position:fixed;inset:0 auto 0 0;width:min(340px,86vw);background:#fff;transform:translateX(-100%);transition:transform .25s;z-index:30;padding:24px;overflow:auto;font-size:16px}
 .drawer a{display:block;padding:12px 0;text-decoration:none;border-bottom:1px solid #e6e6e6}
@@ -33,11 +37,15 @@ h1,h2{font-family:var(--h);font-weight:700;line-height:1.05;margin:0 0 28px;lett
 h1{font-size:clamp(36px,6.4vw,78px)}h2{font-size:clamp(30px,5vw,58px)}
 p{max-width:62ch;margin:0 0 1.1em}
 .lead{font-size:clamp(19px,2.2vw,23px);line-height:1.55}
-.ph{background:rgba(127,127,127,.18);border:1px dashed rgba(127,127,127,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font:14px var(--b);padding:16px}
-.ph small{opacity:.7;margin-top:6px}
+.fig{margin:0}
+.fig img{display:block;width:100%;height:auto;object-fit:cover;background:rgba(127,127,127,.18)}
+.fig figcaption{font-size:13px;line-height:1.4;opacity:.72;margin-top:8px}
+.fig.port{max-width:680px;margin:0 auto}
 .grid{display:grid;gap:12px;margin:36px 0}
 .g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.r43{aspect-ratio:4/3}.r32{aspect-ratio:3/2}.r169{aspect-ratio:16/9}.r34{aspect-ratio:3/4}.r219{aspect-ratio:21/9}
+.grid .fig{align-self:start}
+.r43{aspect-ratio:4/3}.r32{aspect-ratio:3/2}.r169{aspect-ratio:16/9}.r34{aspect-ratio:3/4}.r219{aspect-ratio:21/9}.r11{aspect-ratio:1/1}.r45{aspect-ratio:4/5}
+@media(max-width:640px){.r219{aspect-ratio:4/3}}
 .a0{background:var(--verde);padding-bottom:40px}
 .a1{background:var(--verde);padding-top:24px}
 .t1{height:140px;background:linear-gradient(var(--verde),var(--terra))}
@@ -55,67 +63,67 @@ p{max-width:62ch;margin:0 0 1.1em}
 <input type="checkbox" id="nav" aria-label="Abrir menu">
 <header class="head">
  <div class="l"><label for="nav" aria-label="Menu"><svg viewBox="0 0 512 512"><path d="M25.6,51.2H384v51.2H25.6V51.2Zm0,179.2h486.4v51.2H25.6v-51.2Zm0,179.2H384v51.2H25.6v-51.2Z"/></svg></label></div>
- <a class="logo" href="https://mundano.com.br/" aria-label="Mundano, página inicial"><img src="https://dcdn-us.mitiendanube.com/stores/007/410/797/themes/common/logo-2127463723662146512-1777861343-9795e433236a027f3a6e26c29a2b36c11777861343-480-0.webp" alt="Mundano" width="200" height="80"></a>
+ <a class="logo" href="https://mundano.com.br/" data-en-href="https://mundano.com.br/us/" aria-label="Mundano, página inicial"><img src="https://dcdn-us.mitiendanube.com/stores/007/410/797/themes/common/logo-2127463723662146512-1777861343-9795e433236a027f3a6e26c29a2b36c11777861343-480-0.webp" alt="Mundano" width="200" height="80"></a>
  <div class="r">
-  <a href="https://mundano.com.br/us/" aria-label="Idioma e região"><svg viewBox="0 0 565 512"><path d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256,256-114.85,256-256S397.15,0,256,0ZM459.02,230.4h-75.63c-2.83-62.52-15.97-117.17-36.25-157.53,59.96,29.97,103.19,88.37,111.88,157.53ZM256,460.8c-29.11,0-70.43-69.02-76.1-179.2h152.19c-5.66,110.17-46.97,179.2-76.1,179.2ZM179.9,230.4c5.67-110.17,46.98-179.2,76.1-179.2s70.43,69.03,76.1,179.2h-152.19ZM164.85,72.87c-20.28,40.36-33.42,95.01-36.25,157.53H52.98c8.68-69.16,51.91-127.56,111.88-157.53ZM52.98,281.6h75.63c2.83,62.52,15.97,117.17,36.25,157.53-59.96-29.97-103.19-88.37-111.88-157.53ZM347.15,439.13c20.28-40.36,33.42-95.01,36.25-157.53h75.63c-8.68,69.16-51.91,127.56-111.88,157.53Z"/></svg></a>
+  <button type="button" class="lang" id="lang" aria-label="View in English"><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M256,0C114.84,0,0,114.84,0,256s114.84,256,256,256,256-114.85,256-256S397.15,0,256,0ZM459.02,230.4h-75.63c-2.83-62.52-15.97-117.17-36.25-157.53,59.96,29.97,103.19,88.37,111.88,157.53ZM256,460.8c-29.11,0-70.43-69.02-76.1-179.2h152.19c-5.66,110.17-46.97,179.2-76.1,179.2ZM179.9,230.4c5.67-110.17,46.98-179.2,76.1-179.2s70.43,69.03,76.1,179.2h-152.19ZM164.85,72.87c-20.28,40.36-33.42,95.01-36.25,157.53H52.98c8.68-69.16,51.91-127.56,111.88-157.53ZM52.98,281.6h75.63c2.83,62.52,15.97,117.17,36.25,157.53-59.96-29.97-103.19-88.37-111.88-157.53ZM347.15,439.13c20.28-40.36,33.42-95.01,36.25-157.53h75.63c-8.68,69.16-51.91,127.56-111.88,157.53Z"/></svg><span>EN</span></button>
   <a href="https://mundano.com.br/search/" aria-label="Buscar"><svg viewBox="0 0 512 512"><path d="M501.03,465.15l-94.46-94.46c26.02-35.8,41.43-79.8,41.43-127.39C448,121.7,347.14,21,223.5,21S0,121.7,0,243.3s100.5,222.3,223.5,222.3c47.6,0,91.6-15.4,127.4-41.4l94.46,94.46c10,10,26.2,10,36.2,0S511,475.15,501.03,465.15ZM223.5,414.4c-94.4,0-171.2-76.8-171.2-171.1S129.1,72.2,223.5,72.2s171.2,76.8,171.2,171.1S317.9,414.4,223.5,414.4Z"/></svg></a>
  </div>
 </header>
 <label class="veu" for="nav"></label>
 <nav class="drawer" aria-label="Menu">
- <label class="x" for="nav">Fechar</label>
- <a href="https://mundano.com.br/">Início</a>
- <a href="/" aria-current="page"><b>Sobre</b></a>
- <a href="https://mundano.com.br/contato/">Contato</a>
- <a href="https://mundano.com.br/produtos/">Produtos</a>
+ <label class="x" for="nav" data-en="Close">Fechar</label>
+ <a href="https://mundano.com.br/" data-en-href="https://mundano.com.br/us/" data-en="Home">Início</a>
+ <a href="/" aria-current="page" data-en="<b>About</b>"><b>Sobre</b></a>
+ <a href="https://mundano.com.br/contato/" data-en="Contact">Contato</a>
+ <a href="https://mundano.com.br/produtos/" data-en="Products">Produtos</a>
  <div class="sub">
-  <a href="https://mundano.com.br/prints-e-gravuras/">Prints e Gravuras</a>
-  <a href="https://mundano.com.br/originais/">Originais</a>
+  <a href="https://mundano.com.br/prints-e-gravuras/" data-en="Prints">Prints e Gravuras</a>
+  <a href="https://mundano.com.br/originais/" data-en="Originals">Originais</a>
   <a href="https://mundano.com.br/cinzas-da-floresta/">Cinzas da Floresta</a>
-  <a href="https://mundano.com.br/outros-produtos/">Outros Produtos</a>
+  <a href="https://mundano.com.br/outros-produtos/" data-en="Other products">Outros Produtos</a>
  </div>
  <a href="/cinzas/">Cinzas da Floresta</a>
- <a href="https://mundano.com.br/murais/">Murais</a>
+ <a href="https://mundano.com.br/murais/" data-en="Murals">Murais</a>
 </nav>
 
 <main>
 <section class="ato a0"><div class="in">
- <div class="ph r219" role="img" aria-label="Mundano pintando">FOTO DE ABERTURA: Mundano pintando<small>crédito: ____</small></div>
- <h1 style="margin-top:48px">Prazer, Mundano.</h1>
- <p class="lead">Artivista, nascido em São Paulo em 1986. Há 20 anos usa a arte para dar visibilidade a causas socioambientais. Pinta muros, carroças, telas e laterais de prédios, e transforma resíduos de crimes ambientais em tinta.</p>
- <p class="lead">Fundou o Pimp My Carroça, o aplicativo Cataki, o Prêmio Megafone de Ativismo e o Cinzas da Floresta. É TED Fellow e faz parte do comitê diretor do Global Artivism, conselho internacional de artistas e lideranças culturais que conduz o movimento global de artivismo.</p>
+ <figure class="fig"><img class="r219" src="img/abertura-operarios-pintura.jpg" width="2200" height="1466" style="object-position:50% 70%" alt="Empena Operários de Brumadinho sendo pintada no centro de São Paulo, vista do alto, com plataformas de pintura na fachada" data-en-alt="The Operários de Brumadinho mural being painted in downtown São Paulo, seen from above, with painting platforms on the facade" title="Operários de Brumadinho em pintura · Foto: André D'Elia" data-en-title="Operários de Brumadinho being painted · Photo: André D'Elia" fetchpriority="high"><figcaption data-en="Operários de Brumadinho being painted, 2020. Photo: André D'Elia">Operários de Brumadinho em pintura, 2020. Foto: André D'Elia</figcaption></figure>
+ <h1 style="margin-top:48px" data-en="Meet Mundano.">Prazer, Mundano.</h1>
+ <p class="lead" data-en="Artivist, born in São Paulo in 1986. For 20 years he has used art to bring visibility to social and environmental causes. He paints walls, waste pickers' carts, canvases and building facades, and turns waste from environmental crimes into paint.">Artivista, nascido em São Paulo em 1986. Há 20 anos usa a arte para dar visibilidade a causas socioambientais. Pinta muros, carroças, telas e laterais de prédios, e transforma resíduos de crimes ambientais em tinta.</p>
+ <p class="lead" data-en="He founded Pimp My Carroça, the Cataki app, the Megafone Activism Award and Cinzas da Floresta. He is a TED Fellow and sits on the steering committee of Global Artivism, an international council of artists and cultural leaders that guides the global artivism movement.">Fundou o Pimp My Carroça, o aplicativo Cataki, o Prêmio Megafone de Ativismo e o Cinzas da Floresta. É TED Fellow e faz parte do comitê diretor do Global Artivism, conselho internacional de artistas e lideranças culturais que conduz o movimento global de artivismo.</p>
 </div></section>
 
 <section class="ato a1"><div class="in">
- <p class="tag">Trajetória</p>
- <h2>As carroças</h2>
- <p>Catadores e catadoras de material reciclável fazem quase toda a reciclagem do Brasil. Mundano começou pintando as carroças desses trabalhadores, com frases como “Seu lixo é meu luxo”.</p>
- <p>Em 2012 fundou o Pimp My Carroça, ONG voltada ao reconhecimento de catadores e catadoras e da importância do trabalho deles. Depois veio o Cataki, aplicativo sem fins lucrativos que conecta catadores a empresas, comércios e moradores que querem destinar seus resíduos para a reciclagem.</p>
- <p>Esse trabalho levou Mundano a palestras, exposições e premiações em vários países, entre elas o Prêmio Folha Empreendedor Social do Ano, em 2020, e o Grand Prize do Netexplo Digital Innovation Award, em Paris, em 2018.</p>
+ <p class="tag" data-en="Journey">Trajetória</p>
+ <h2 data-en="The carts">As carroças</h2>
+ <p data-en="Waste pickers, the catadores and catadoras, do almost all of Brazil's recycling. Mundano started out painting these workers' carts with phrases like “Seu lixo é meu luxo” (your trash is my luxury).">Catadores e catadoras de material reciclável fazem quase toda a reciclagem do Brasil. Mundano começou pintando as carroças desses trabalhadores, com frases como “Seu lixo é meu luxo”.</p>
+ <p data-en="In 2012 he founded Pimp My Carroça, an NGO dedicated to recognizing waste pickers and the importance of their work. Then came Cataki, a nonprofit app that connects waste pickers with companies, shops and residents who want to send their waste to recycling.">Em 2012 fundou o Pimp My Carroça, ONG voltada ao reconhecimento de catadores e catadoras e da importância do trabalho deles. Depois veio o Cataki, aplicativo sem fins lucrativos que conecta catadores a empresas, comércios e moradores que querem destinar seus resíduos para a reciclagem.</p>
+ <p data-en="This work took Mundano to talks, exhibitions and awards in several countries, among them the Folha Social Entrepreneur of the Year Award, in 2020, and the Grand Prize of the Netexplo Digital Innovation Award, in Paris, in 2018.">Esse trabalho levou Mundano a palestras, exposições e premiações em vários países, entre elas o Prêmio Folha Empreendedor Social do Ano, em 2020, e o Grand Prize do Netexplo Digital Innovation Award, em Paris, em 2018.</p>
  <div class="grid g2">
-  <div class="ph r32">FOTO: Mundano pintando uma carroça<small>crédito: ____</small></div>
-  <div class="ph r34">FOTO: catador com a carroça pintada<small>crédito: ____</small></div>
+  <figure class="fig"><a href="https://www.flickr.com/photos/pimpmycarroca/7296474706/" target="_blank" rel="noopener"><img class="r32" src="https://live.staticflickr.com/7090/7296474706_3545123d4d_b.jpg" width="1024" height="683" alt="Mundano pinta com spray uma placa de papelão escrita Pimp my carro, ao lado de uma carroça" data-en-alt="Mundano spray paints a cardboard sign reading Pimp my carro, next to a cart" title="Na Favela do Moinho. Foto: Mel Duarte" data-en-title="At Favela do Moinho. Photo: Mel Duarte" loading="lazy"></a><figcaption data-en="At Favela do Moinho. Photo: Mel Duarte">Na Favela do Moinho. Foto: Mel Duarte</figcaption></figure>
+  <figure class="fig"><a href="https://www.flickr.com/photos/pimpmycarroca/7200675272/" target="_blank" rel="noopener"><img class="r34" src="https://live.staticflickr.com/5329/7200675272_4ea55e831f_b.jpg" width="686" height="1024" alt="Mundano, de costas, pinta uma carroça laranja" data-en-alt="Mundano, seen from behind, paints an orange cart" title="Foto: Mel Duarte" data-en-title="Photo: Mel Duarte" loading="lazy"></a><figcaption data-en="Photo: Mel Duarte">Foto: Mel Duarte</figcaption></figure>
  </div>
  <div class="grid g3">
-  <div class="ph r43">FOTO: mutirão de pintura<small>crédito: ____</small></div>
-  <div class="ph r43">FOTO: carroça pronta<small>crédito: ____</small></div>
-  <div class="ph r43">FOTO: Mundano com catadores<small>crédito: ____</small></div>
+  <figure class="fig"><a href="https://www.flickr.com/photos/pimpmycarroca/7200713870/" target="_blank" rel="noopener"><img class="r43" src="https://live.staticflickr.com/7215/7200713870_651f2c42a8_b.jpg" width="1024" height="685" alt="Catadora ao lado de sua carroça laranja pintada com a frase Catadora com orgulho" data-en-alt="A waste picker next to her orange cart painted with the phrase Proud waste picker" title="Maria Aparecida, catadora de Poços de Caldas (MG). Foto: Mel Duarte" data-en-title="Maria Aparecida, waste picker in Poços de Caldas (MG). Photo: Mel Duarte" loading="lazy"></a><figcaption data-en="Maria Aparecida, waste picker in Poços de Caldas (MG). Photo: Mel Duarte">Maria Aparecida, catadora de Poços de Caldas (MG). Foto: Mel Duarte</figcaption></figure>
+  <figure class="fig"><a href="https://www.flickr.com/photos/pimpmycarroca/7200846174/" target="_blank" rel="noopener"><img class="r43" src="https://live.staticflickr.com/7223/7200846174_ccbb501c4f_b.jpg" width="1024" height="730" alt="Catador ao lado de sua carroça pintada com a frase Meu carro não polui" data-en-alt="A waste picker next to his cart painted with the phrase My car doesn't pollute" title="Carroça nº 106, do catador Valdemar. Foto: Mundano" data-en-title="Cart no. 106, belonging to waste picker Valdemar. Photo: Mundano" loading="lazy"></a><figcaption data-en="Cart no. 106, belonging to waste picker Valdemar. Photo: Mundano">Carroça nº 106, do catador Valdemar. Foto: Mundano</figcaption></figure>
+  <figure class="fig"><a href="https://www.flickr.com/photos/pimpmycarroca/7200846526/" target="_blank" rel="noopener"><img class="r43" src="https://live.staticflickr.com/7223/7200846526_2528ffffa8_b.jpg" width="640" height="480" alt="Catador ao lado de carroça pintada com um rosto amarelo e a frase Meu carro não polui" data-en-alt="A waste picker next to a cart painted with a yellow face and the phrase My car doesn't pollute" title="Foto: Mundano" data-en-title="Photo: Mundano" loading="lazy"></a><figcaption data-en="Photo: Mundano">Foto: Mundano</figcaption></figure>
  </div>
 </div></section>
 
 <div class="t1" aria-hidden="true"></div>
 
 <section class="ato a2"><div class="in">
- <h2>A tinta dos crimes ambientais</h2>
- <p>Nos últimos anos, Mundano percorreu o Brasil coletando resíduos dos maiores crimes ambientais da história do país: a lama tóxica do rompimento da barragem de Brumadinho, o óleo derramado nas praias do Nordeste e as cinzas das florestas queimadas. Com eles, faz a própria tinta.</p>
- <p>Com essa tinta, Mundano passou a reler o modernismo brasileiro. Na série #releiturasmundanas, quadros de Tarsila do Amaral, Cândido Portinari e Lasar Segall voltam para a rua com os personagens e os materiais do Brasil de hoje.</p>
- <p>A primeira foi Operários de Brumadinho, em 2020: a releitura de Operários, de Tarsila, pintada no centro de São Paulo com a lama da barragem que se rompeu em 2019. Da mesma série são Abaporuopeba, a partir do Abaporu, e Mestiço do Vale do Paraopeba, a partir de Mestiço, de Portinari.</p>
- <p>Em 2022, no centenário da Semana de Arte Moderna, Mundano abriu a individual Semana de Arte Mundana, na Galeria Kogan Amaro, em São Paulo, com cerca de 50 obras feitas com lama, óleo e cinzas. O convite reinterpretava o cartaz de Di Cavalcanti para a Semana de 22. Na Sé, pintou Ari Uru-Eu-Wau-Wau, releitura de Bananal, de Lasar Segall, com terra do Marco Zero de São Paulo e cinzas da Amazônia, em homenagem ao guardião indígena assassinado em Rondônia em 2020.</p>
- <p>Em 2023 abriu a exposição individual Resíduos Mundanos.</p>
- <div class="ph r169">FOTO: Operários de Brumadinho, mural finalizado<small>crédito: ____</small></div>
+ <h2 data-en="Paint made from environmental crimes">A tinta dos crimes ambientais</h2>
+ <p data-en="In recent years, Mundano has traveled across Brazil collecting waste from the largest environmental crimes in the country's history: toxic mud from the Brumadinho dam collapse, oil spilled on the beaches of the Northeast and ashes from burned forests. He makes his own paint with them.">Nos últimos anos, Mundano percorreu o Brasil coletando resíduos dos maiores crimes ambientais da história do país: a lama tóxica do rompimento da barragem de Brumadinho, o óleo derramado nas praias do Nordeste e as cinzas das florestas queimadas. Com eles, faz a própria tinta.</p>
+ <p data-en="With this paint, Mundano began revisiting Brazilian modernism. In the #releiturasmundanas series, paintings by Tarsila do Amaral, Cândido Portinari and Lasar Segall return to the street with the people and materials of today's Brazil.">Com essa tinta, Mundano passou a reler o modernismo brasileiro. Na série #releiturasmundanas, quadros de Tarsila do Amaral, Cândido Portinari e Lasar Segall voltam para a rua com os personagens e os materiais do Brasil de hoje.</p>
+ <p data-en="The first was Operários de Brumadinho, in 2020: a new take on Tarsila's Operários, painted in downtown São Paulo with mud from the dam that collapsed in 2019. The same series includes Abaporuopeba, based on Abaporu, and Mestiço do Vale do Paraopeba, based on Portinari's Mestiço.">A primeira foi Operários de Brumadinho, em 2020: a releitura de Operários, de Tarsila, pintada no centro de São Paulo com a lama da barragem que se rompeu em 2019. Da mesma série são Abaporuopeba, a partir do Abaporu, e Mestiço do Vale do Paraopeba, a partir de Mestiço, de Portinari.</p>
+ <p data-en="In 2022, the centenary of the Modern Art Week, Mundano opened the solo show Semana de Arte Mundana at Galeria Kogan Amaro, in São Paulo, with about 50 works made with mud, oil and ashes. The invitation reworked Di Cavalcanti's poster for the 1922 Week. In the Sé district he painted Ari Uru-Eu-Wau-Wau, a new take on Lasar Segall's Bananal, with soil from São Paulo's Marco Zero and ashes from the Amazon, in tribute to the Indigenous forest guardian murdered in Rondônia in 2020.">Em 2022, no centenário da Semana de Arte Moderna, Mundano abriu a individual Semana de Arte Mundana, na Galeria Kogan Amaro, em São Paulo, com cerca de 50 obras feitas com lama, óleo e cinzas. O convite reinterpretava o cartaz de Di Cavalcanti para a Semana de 22. Na Sé, pintou Ari Uru-Eu-Wau-Wau, releitura de Bananal, de Lasar Segall, com terra do Marco Zero de São Paulo e cinzas da Amazônia, em homenagem ao guardião indígena assassinado em Rondônia em 2020.</p>
+ <p data-en="In 2023 he opened the solo exhibition Resíduos Mundanos.">Em 2023 abriu a exposição individual Resíduos Mundanos.</p>
+ <figure class="fig"><img class="r169" src="img/operarios-brumadinho.jpg" width="1600" height="1198" alt="Empena Operários de Brumadinho finalizada, com dezenas de rostos em tons de lama e um braço erguendo um megafone" data-en-alt="The finished Operários de Brumadinho mural, with dozens of faces in mud tones and an arm raising a megaphone" title="Operários de Brumadinho · Foto: Pedro Ricci" data-en-title="Operários de Brumadinho · Photo: Pedro Ricci" loading="lazy"><figcaption data-en="Operários de Brumadinho, 2020. Photo: Pedro Ricci">Operários de Brumadinho, 2020. Foto: Pedro Ricci</figcaption></figure>
  <div class="grid g2">
-  <div class="ph r43">FOTO: Mundano com a lama<small>crédito: ____</small></div>
-  <div class="ph r43">FOTO: obra feita com lama ou óleo<small>crédito: ____</small></div>
+  <figure class="fig"><img class="r43" src="img/tela-brumadinho.jpg" width="1600" height="971" alt="Pintura em tons de lama que relê a composição de Guernica" data-en-alt="Painting in mud tones that revisits the composition of Guernica" title="Brumadinho · Foto: Stefânia Sangi" data-en-title="Brumadinho · Photo: Stefânia Sangi" loading="lazy"><figcaption data-en="Brumadinho. Photo: Stefânia Sangi">Brumadinho. Foto: Stefânia Sangi</figcaption></figure>
+  <figure class="fig"><img class="r43" src="img/persistencia-destruicao.jpg" width="1600" height="1200" alt="Mural num muro de rua com relógios derretidos sobre uma paisagem seca, urubus e um barco encalhado" data-en-alt="Street wall mural with melting clocks over a dry landscape, vultures and a stranded boat" title="Persistência da Destruição · Foto: acervo pessoal Mundano" data-en-title="Persistência da Destruição · Photo: Mundano's personal archive" loading="lazy"><figcaption data-en="Persistência da Destruição. Photo: Mundano's personal archive">Persistência da Destruição. Foto: acervo pessoal Mundano</figcaption></figure>
  </div>
 </div></section>
 
@@ -123,30 +131,54 @@ p{max-width:62ch;margin:0 0 1.1em}
 
 <section class="ato a3"><div class="in">
  <h2>Cinzas da Floresta</h2>
- <p>Em 2021, Mundano percorreu 10 mil quilômetros coletando cinzas de queimadas na Amazônia, no Cerrado, no Pantanal e na Mata Atlântica. Com elas pintou O Brigadista da Floresta, mural de mais de 1.000 m² em homenagem aos brigadistas que apagam os incêndios, releitura de O lavrador de café, de Cândido Portinari. A expedição virou o documentário Cinzas da Floresta, de André D'Elia, lançado em 2022.</p>
- <p>Em 2024 pintou Pare a Destruição, na Avenida Brigadeiro Luís Antônio, em São Paulo: mais de 1.500 m², a maior empena da carreira, com o retrato da liderança indígena Alessandra Korap feito com cinzas dos quatro biomas e lama das enchentes do Rio Grande do Sul. Em 2025, o Cinzas da Floresta levou à COP30, em Belém, uma exposição com mais de 300 obras de artistas do Brasil e de outros países pintadas com cinzas de incêndios.</p>
- <div class="ph r169">FOTO: O Brigadista da Floresta, mural finalizado<small>crédito: ____</small></div>
+ <p data-en="In 2021, Mundano traveled 10,000 kilometers collecting ashes from fires in the Amazon, the Cerrado, the Pantanal and the Atlantic Forest. With them he painted O Brigadista da Floresta, a mural of more than 1,000 m² honoring the forest firefighters who put out the fires, a new take on Cândido Portinari's O lavrador de café. The expedition became the documentary Cinzas da Floresta, by André D'Elia, released in 2022.">Em 2021, Mundano percorreu 10 mil quilômetros coletando cinzas de queimadas na Amazônia, no Cerrado, no Pantanal e na Mata Atlântica. Com elas pintou O Brigadista da Floresta, mural de mais de 1.000 m² em homenagem aos brigadistas que apagam os incêndios, releitura de O lavrador de café, de Cândido Portinari. A expedição virou o documentário Cinzas da Floresta, de André D'Elia, lançado em 2022.</p>
+ <p data-en="In 2024 he painted Pare a Destruição (Stop the Destruction) on Avenida Brigadeiro Luís Antônio, in São Paulo: more than 1,500 m², the largest facade of his career, with a portrait of Indigenous leader Alessandra Korap made with ashes from the four biomes and mud from the Rio Grande do Sul floods. In 2025, Cinzas da Floresta took to COP30, in Belém, an exhibition of more than 300 works by artists from Brazil and other countries, painted with ashes from fires.">Em 2024 pintou Pare a Destruição, na Avenida Brigadeiro Luís Antônio, em São Paulo: mais de 1.500 m², a maior empena da carreira, com o retrato da liderança indígena Alessandra Korap feito com cinzas dos quatro biomas e lama das enchentes do Rio Grande do Sul. Em 2025, o Cinzas da Floresta levou à COP30, em Belém, uma exposição com mais de 300 obras de artistas do Brasil e de outros países pintadas com cinzas de incêndios.</p>
+ <figure class="fig port"><img class="r45" src="img/brigadista-floresta.jpg" width="1487" height="1600" style="object-position:50% 30%" alt="Empena O Brigadista da Floresta, em tons de cinza, com um brigadista de pé segurando uma ferramenta sobre uma paisagem queimada" data-en-alt="The O Brigadista da Floresta mural, in shades of gray, showing a forest firefighter standing with a tool over a burned landscape" title="O Brigadista da Floresta · Foto: André D'Elia" data-en-title="O Brigadista da Floresta · Photo: André D'Elia" loading="lazy"><figcaption data-en="O Brigadista da Floresta, 2021. Photo: André D'Elia">O Brigadista da Floresta, 2021. Foto: André D'Elia</figcaption></figure>
  <div class="nums">
-  <div><b>11</b><span>empenas</span></div>
-  <div><b>12</b><span>murais</span></div>
-  <div><b>16</b><span>oficinas</span></div>
-  <div><b>9</b><span>exposições</span></div>
-  <div><b>+4.800 m²</b><span>pintados com cinzas em 16 cidades, por mais de 500 artistas, entre 2021 e 2025</span></div>
-  <div><b>1.500</b><span>participantes do projeto</span></div>
+  <div><b>11</b><span data-en="building facades">empenas</span></div>
+  <div><b>12</b><span data-en="murals">murais</span></div>
+  <div><b>16</b><span data-en="workshops">oficinas</span></div>
+  <div><b>9</b><span data-en="exhibitions">exposições</span></div>
+  <div><b data-en="4,800+ m²">+4.800 m²</b><span data-en="painted with ashes in 16 cities, by more than 500 artists, between 2021 and 2025">pintados com cinzas em 16 cidades, por mais de 500 artistas, entre 2021 e 2025</span></div>
+  <div><b data-en="1,500">1.500</b><span data-en="project participants">participantes do projeto</span></div>
  </div>
  <div class="grid g3">
-  <div class="ph r34">FOTO: Ari Uru-Eu-Wau-Wau<small>crédito: ____</small></div>
-  <div class="ph r34">FOTO: Pare a Destruição<small>crédito: ____</small></div>
-  <div class="ph r34">FOTO: O Mito da Reciclagem<small>crédito: ____</small></div>
+  <figure class="fig"><img class="r11" src="img/ari-uru-eu-wau-wau.jpg" width="1600" height="1067" style="object-position:22% 50%" alt="Empena Ari Uru-Eu-Wau-Wau, retrato de homem indígena segurando um bastão diante de folhagens verdes" data-en-alt="The Ari Uru-Eu-Wau-Wau mural, a portrait of an Indigenous man holding a staff in front of green foliage" title="Ari Uru-Eu-Wau-Wau · Foto: Amauri Nehn" data-en-title="Ari Uru-Eu-Wau-Wau · Photo: Amauri Nehn" loading="lazy"><figcaption data-en="Ari Uru-Eu-Wau-Wau, 2022. Photo: Amauri Nehn">Ari Uru-Eu-Wau-Wau, 2022. Foto: Amauri Nehn</figcaption></figure>
+  <figure class="fig"><img class="r11" src="img/pare-a-destruicao.jpg" width="1600" height="1066" alt="Empena Pare a Destruição, mulher indígena segura um cartaz com a frase Pare a destruição diante de troncos queimados e terra rachada" data-en-alt="The Pare a Destruição mural, an Indigenous woman holding a sign reading Stop the destruction in front of burned trunks and cracked earth" title="Pare a Destruição · Foto: Ricardo Yamamoto" data-en-title="Pare a Destruição · Photo: Ricardo Yamamoto" loading="lazy"><figcaption data-en="Pare a Destruição, 2024. Photo: Ricardo Yamamoto">Pare a Destruição, 2024. Foto: Ricardo Yamamoto</figcaption></figure>
+  <figure class="fig"><img class="r11" src="img/mito-da-reciclagem.jpg" width="1200" height="1600" style="object-position:50% 40%" alt="Empena O Mito da Reciclagem, catadora carrega o planeta Terra num saco nas costas, subindo um morro de resíduos" data-en-alt="The O Mito da Reciclagem mural, a waste picker carrying planet Earth in a sack on her back as she climbs a hill of waste" title="O Mito da Reciclagem · Foto: Luan Rentes" data-en-title="O Mito da Reciclagem · Photo: Luan Rentes" loading="lazy"><figcaption data-en="O Mito da Reciclagem, 2025. Photo: Luan Rentes">O Mito da Reciclagem, 2025. Foto: Luan Rentes</figcaption></figure>
  </div>
- <p class="slogan">A floresta em pó pela floresta em pé.</p>
+ <p class="slogan" data-en="The forest as dust, for the forest still standing.">A floresta em pó pela floresta em pé.</p>
 </div></section>
 
 <section class="ato a4"><div class="in">
- <h2>Obras e catálogo</h2>
- <p>Obras originais, prints numerados com certificado e a linha Cinzas da Floresta estão na loja. Para ver o catálogo completo de obras ou conversar sobre uma peça específica, fale direto com a equipe.</p>
- <a class="btn" href="https://mundano.com.br/produtos/">Ver a loja</a>
- <a class="btn" href="https://wa.me/5511990119051?text=Ol%C3%A1!%20Quero%20receber%20o%20cat%C3%A1logo%20de%20obras%20do%20Mundano.">Catálogo e atendimento no WhatsApp</a>
+ <h2 data-en="Works and catalog">Obras e catálogo</h2>
+ <p data-en="Original works, numbered prints with a certificate and the Cinzas da Floresta line are in the shop. To see the full catalog of works or ask about a specific piece, talk directly to the team.">Obras originais, prints numerados com certificado e a linha Cinzas da Floresta estão na loja. Para ver o catálogo completo de obras ou conversar sobre uma peça específica, fale direto com a equipe.</p>
+ <a class="btn" href="https://mundano.com.br/produtos/" data-en="Visit the shop">Ver a loja</a>
+ <a class="btn" href="https://wa.me/5511990119051?text=Ol%C3%A1!%20Quero%20receber%20o%20cat%C3%A1logo%20de%20obras%20do%20Mundano." data-en-href="https://wa.me/5511990119051?text=Hello!%20I%27d%20like%20to%20receive%20Mundano%27s%20catalog%20of%20works." data-en="Catalog and support on WhatsApp">Catálogo e atendimento no WhatsApp</a>
 </div></section>
 </main>
+<script>
+(function(){
+ var T={pt:document.title,en:"About Mundano | Artivist"};
+ var D=document,b=D.getElementById("lang"),q=function(s){return [].slice.call(D.querySelectorAll(s))};
+ var tx=q("[data-en]"),al=q("[data-en-alt]"),ti=q("[data-en-title]"),hr=q("[data-en-href]");
+ tx.forEach(function(e){e._pt=e.innerHTML});al.forEach(function(e){e._pt=e.alt});ti.forEach(function(e){e._pt=e.title});hr.forEach(function(e){e._pt=e.getAttribute("href")});
+ function set(l,save){
+  var en=l==="en";
+  tx.forEach(function(e){e.innerHTML=en?e.getAttribute("data-en"):e._pt});
+  al.forEach(function(e){e.alt=en?e.getAttribute("data-en-alt"):e._pt});
+  ti.forEach(function(e){e.title=en?e.getAttribute("data-en-title"):e._pt});
+  hr.forEach(function(e){e.setAttribute("href",en?e.getAttribute("data-en-href"):e._pt)});
+  D.documentElement.lang=en?"en":"pt-BR";D.title=en?T.en:T.pt;
+  b.querySelector("span").textContent=en?"PT":"EN";
+  b.setAttribute("aria-label",en?"Ver em português":"View in English");
+  if(save){try{localStorage.setItem("lang",l)}catch(x){}}
+ }
+ var l=null;try{l=new URLSearchParams(location.search).get("lang")}catch(x){}
+ if(!l){try{l=localStorage.getItem("lang")}catch(x){}}
+ if(!l){l=/^pt/i.test(navigator.language||"pt")?"pt":"en"}
+ if(l==="en")set("en",false);
+ b.addEventListener("click",function(){set(D.documentElement.lang==="en"?"pt":"en",true)});
+})();
+</script>
 </body></html>

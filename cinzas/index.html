@@ -3,6 +3,7 @@
 <title>Canetas Cinzas da Floresta</title>
 <meta name="description" content="Canetas feitas à mão com tinta de cinzas de incêndios florestais no Brasil.">
 <link rel="canonical" href="https://trajetoria.mundano.com.br/cinzas/">
+<link rel="alternate" hreflang="pt-BR" href="https://trajetoria.mundano.com.br/cinzas/"><link rel="alternate" hreflang="en" href="https://trajetoria.mundano.com.br/cinzas/?lang=en">
 <meta property="og:title" content="Canetas Cinzas da Floresta"><meta property="og:description" content="Canetas feitas à mão com tinta de cinzas de incêndios florestais no Brasil."><meta property="og:type" content="website"><meta property="og:url" content="https://trajetoria.mundano.com.br/cinzas/"><meta property="og:image" content="https://trajetoria.mundano.com.br/cinzas/img/hero-desktop.jpg"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
@@ -101,6 +102,9 @@ body{background:#141514;color:#e6e6e3}
 .fim h2{color:var(--tinta)}
 .fim .btn{border-color:var(--tinta)}
 .fim .btn:hover,.fim .btn:focus-visible{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.head{position:sticky}.lang{position:absolute;right:16px;top:50%;transform:translateY(-50%);font:500 13px/1 var(--b);letter-spacing:.1em;color:#f2f2ef;background:transparent;border:1px solid #6b6d6a;padding:8px 10px;cursor:pointer}
+.lang:hover,.lang:focus-visible{background:var(--verde);color:var(--tinta);border-color:var(--verde)}
+@media(min-width:768px){.lang{right:32px}}
 .foot{background:#0d0e0d;color:#9a9a95;padding:28px 6vw;font-size:14px}
 
 .cta{margin-top:28px}
@@ -123,107 +127,128 @@ body{background:#141514;color:#e6e6e3}
 @media(min-width:761px){.brig3 .cred img{height:340px;aspect-ratio:auto}}
 @media(max-width:760px){.brig3{grid-template-columns:1fr}}
 </style></head><body>
-<header class="head"><img class="marca-logo" src="img/logo-cinzas.png" width="341" height="120" alt="Cinzas da Floresta"></header>
+<header class="head"><img class="marca-logo" src="img/logo-cinzas.png" width="341" height="120" alt="Cinzas da Floresta"><button type="button" class="lang" id="lang" aria-label="View in English">EN</button></header>
 
 <main>
 <section class="hero" style="padding:0">
- <picture class="foto r219m"><source media="(max-width:640px)" srcset="img/hero-mobile.jpg" width="1600" height="1200"><img src="img/hero-desktop.jpg" width="2520" height="1080" alt="Canetas Cinzas da Floresta e frasconetes com cinzas da Amazônia e da Mata Atlântica" fetchpriority="high"></picture>
+ <picture class="foto r219m"><source media="(max-width:640px)" srcset="img/hero-mobile.jpg" width="1600" height="1200"><img src="img/hero-desktop.jpg" width="2520" height="1080" alt="Canetas Cinzas da Floresta e frasconetes com cinzas da Amazônia e da Mata Atlântica" data-en-alt="Cinzas da Floresta pens and small vials of ashes from the Amazon and the Atlantic Forest" fetchpriority="high"></picture>
  <div class="sec" style="padding-top:64px;padding-bottom:84px"><div class="in">
-  <span class="eyebrow">Lançamento · Cinzas da Floresta</span>
-  <h1>Escreva com o que <em>sobrou da floresta.</em></h1>
-  <p class="lead">Canetas feitas à mão com tinta de cinzas de incêndios florestais no Brasil.</p>
-  <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+  <span class="eyebrow" data-en="Launch · Cinzas da Floresta">Lançamento · Cinzas da Floresta</span>
+  <h1 data-en="Write with what &lt;em&gt;is left of the forest.&lt;/em&gt;">Escreva com o que <em>sobrou da floresta.</em></h1>
+  <p class="lead" data-en="Handmade pens with ink made from the ashes of forest fires in Brazil.">Canetas feitas à mão com tinta de cinzas de incêndios florestais no Brasil.</p>
+  <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/" data-en="See the pens">Ver as canetas</a>
  </div></div>
 </section>
-<div class="band">A floresta em pó, pela floresta em pé.</div>
+<div class="band" data-en="The forest as dust, for the forest still standing.">A floresta em pó, pela floresta em pé.</div>
 
 <section class="sec" id="canetas"><div class="in">
- <p class="eyebrow">As cores</p>
- <h2 style="color:#f2f2ef">Cada cor vem de um bioma que queimou.</h2>
- <p class="lead" style="color:#cfcfca">Cerrado, Pantanal e Amazônia. O tom da tinta muda, assim como os tempos estão mudando.</p>
+ <p class="eyebrow" data-en="The colors">As cores</p>
+ <h2 style="color:#f2f2ef" data-en="Each color comes from a biome that burned.">Cada cor vem de um bioma que queimou.</h2>
+ <p class="lead" style="color:#cfcfca" data-en="Cerrado, Pantanal and Amazon. The tone of the ink changes, just as the times are changing.">Cerrado, Pantanal e Amazônia. O tom da tinta muda, assim como os tempos estão mudando.</p>
  <div class="sw3">
-  <article class="chip"><i style="background:#2b2b29"></i><div class="bd"><span class="st">Cinzas do Cerrado</span><h3>Carvão Cerrado</h3><p>A mais escura, feita basicamente de carvão. Vem do Cerrado, de árvores tortas e raízes fundas, onde nascem rios que abastecem boa parte do Brasil.</p></div></article>
-  <article class="chip"><i style="background:#b9bbb8"></i><div class="bd"><span class="st">Cinzas do Pantanal</span><h3>Cinza Pantanal</h3><p>Um tom mais claro e levemente terroso, porque a coleta trouxe mais areia e terra. Vem do Pantanal, uma das maiores planícies alagáveis do mundo, que também queima quando a água baixa.</p></div></article>
-  <article class="chip"><i style="background:#7a6a5c"></i><div class="bd"><span class="st">Cinzas da Amazônia</span><h3>Amazônia El Niño</h3><p>Tom de sombra, mistura de carvão e cinzas de um incêndio na Amazônia que começou com um raio e cresceu com o Super El Niño deste ano.</p></div></article>
+  <article class="chip"><i style="background:#2b2b29"></i><div class="bd"><span class="st" data-en="Ashes from the Cerrado">Cinzas do Cerrado</span><h3>Carvão Cerrado</h3><p data-en="The darkest one, made mostly of charcoal. It comes from the Cerrado, a land of twisted trees and deep roots, where rivers that supply much of Brazil are born.">A mais escura, feita basicamente de carvão. Vem do Cerrado, de árvores tortas e raízes fundas, onde nascem rios que abastecem boa parte do Brasil.</p></div></article>
+  <article class="chip"><i style="background:#b9bbb8"></i><div class="bd"><span class="st" data-en="Ashes from the Pantanal">Cinzas do Pantanal</span><h3>Cinza Pantanal</h3><p data-en="A lighter, slightly earthy tone, because the collection brought in more sand and soil. It comes from the Pantanal, one of the largest floodplains in the world, which also burns when the water recedes.">Um tom mais claro e levemente terroso, porque a coleta trouxe mais areia e terra. Vem do Pantanal, uma das maiores planícies alagáveis do mundo, que também queima quando a água baixa.</p></div></article>
+  <article class="chip"><i style="background:#7a6a5c"></i><div class="bd"><span class="st" data-en="Ashes from the Amazon">Cinzas da Amazônia</span><h3 data-en="Amazon El Niño">Amazônia El Niño</h3><p data-en="A shadow tone, a mix of charcoal and ashes from an Amazon fire that started with a lightning strike and grew with this year's Super El Niño.">Tom de sombra, mistura de carvão e cinzas de um incêndio na Amazônia que começou com um raio e cresceu com o Super El Niño deste ano.</p></div></article>
  </div>
- <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+ <a class="btn pri cta" href="https://mundano.com.br/cinzas-da-floresta/" data-en="See the pens">Ver as canetas</a>
 </div></section>
 
 <section class="sec kit" id="kit"><div class="in">
- <p class="eyebrow" style="color:#6f5f17">Lançamento</p>
- <h2>Duas formas de levar as cinzas.</h2>
+ <p class="eyebrow" style="color:#6f5f17" data-en="Launch">Lançamento</p>
+ <h2 data-en="Two ways to take the ashes with you.">Duas formas de levar as cinzas.</h2>
  <div class="prod2">
   <article>
-   <img class="foto r34" src="img/kit-biomas.jpg" width="1086" height="1448" alt="Caneta Cinzas da Floresta com frasconetes de cinzas do Cerrado, Pantanal, Amazônia e Mata Atlântica" loading="lazy">
-   <h3>Kit Cinzas da Floresta</h3>
+   <img class="foto r34" src="img/kit-biomas.jpg" width="1086" height="1448" alt="Caneta Cinzas da Floresta com frasconetes de cinzas do Cerrado, Pantanal, Amazônia e Mata Atlântica" data-en-alt="Cinzas da Floresta pen with vials of ashes from the Cerrado, Pantanal, Amazon and Atlantic Forest" loading="lazy">
+   <h3 data-en="Cinzas da Floresta Kit">Kit Cinzas da Floresta</h3>
    <ul>
-    <li><b>2 canetas:</b> Carvão Cerrado e Cinza Pantanal</li>
-    <li><b>4 frasconetes</b> com amostras de cinzas da Amazônia, do Pantanal, do Cerrado e da Mata Atlântica</li>
+    <li data-en="&lt;b&gt;2 pens:&lt;/b&gt; Carvão Cerrado and Cinza Pantanal"><b>2 canetas:</b> Carvão Cerrado e Cinza Pantanal</li>
+    <li data-en="&lt;b&gt;4 small vials&lt;/b&gt; with ash samples from the Amazon, the Pantanal, the Cerrado and the Atlantic Forest"><b>4 frasconetes</b> com amostras de cinzas da Amazônia, do Pantanal, do Cerrado e da Mata Atlântica</li>
    </ul>
-   <p>Os frasconetes só vêm no kit. Cada um guarda uma amostra do crime ambiental: cinzas de florestas que já abrigaram árvores, pássaros, insetos e incontáveis outras vidas.</p>
-   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver o kit</a>
+   <p data-en="The vials only come in the kit. Each one holds a sample of the environmental crime: ashes of forests that were once home to trees, birds, insects and countless other lives.">Os frasconetes só vêm no kit. Cada um guarda uma amostra do crime ambiental: cinzas de florestas que já abrigaram árvores, pássaros, insetos e incontáveis outras vidas.</p>
+   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/" data-en="See the kit">Ver o kit</a>
   </article>
   <article>
-   <img class="foto r34" src="img/prod-marcadores.jpg" width="1086" height="1448" alt="Canetas Cinzas da Floresta enfileiradas" loading="lazy">
-   <h3>Canetas avulsas</h3>
+   <img class="foto r34" src="img/prod-marcadores.jpg" width="1086" height="1448" alt="Canetas Cinzas da Floresta enfileiradas" data-en-alt="Cinzas da Floresta pens lined up" loading="lazy">
+   <h3 data-en="Single pens">Canetas avulsas</h3>
    <ul>
-    <li><b>Carvão Cerrado:</b> a mais escura, quase só carvão</li>
-    <li><b>Cinza Pantanal:</b> mais clara, com um tom terroso</li>
-    <li><b>Amazônia El Niño:</b> tom de sombra, de carvão e cinzas</li>
+    <li data-en="&lt;b&gt;Carvão Cerrado:&lt;/b&gt; the darkest, almost pure charcoal"><b>Carvão Cerrado:</b> a mais escura, quase só carvão</li>
+    <li data-en="&lt;b&gt;Cinza Pantanal:&lt;/b&gt; lighter, with an earthy tone"><b>Cinza Pantanal:</b> mais clara, com um tom terroso</li>
+    <li data-en="&lt;b&gt;Amazon El Niño:&lt;/b&gt; a shadow tone, of charcoal and ashes"><b>Amazônia El Niño:</b> tom de sombra, de carvão e cinzas</li>
    </ul>
-   <p>Para escolher a cor ou ter as três.</p>
-   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+   <p data-en="To pick your color, or to have all three.">Para escolher a cor ou ter as três.</p>
+   <a class="btn cta" href="https://mundano.com.br/cinzas-da-floresta/" data-en="See the pens">Ver as canetas</a>
   </article>
  </div>
 </div></section>
 
 <section class="sec" style="background:#101110"><div class="in split">
- <img class="foto r34" src="img/mao-canetas.jpg" width="1500" height="2000" alt="Mão segurando quatro canetas Cinzas da Floresta" loading="lazy">
+ <img class="foto r34" src="img/mao-canetas.jpg" width="1500" height="2000" alt="Mão segurando quatro canetas Cinzas da Floresta" data-en-alt="Hand holding four Cinzas da Floresta pens" loading="lazy">
  <div>
-  <p class="eyebrow">Feitas à mão</p>
-  <h2 style="color:#f2f2ef">O resíduo do crime ambiental vira o traço da sua mensagem.</h2>
-  <p style="color:#cfcfca">Uma ferramenta de denúncia. Cada caneta é montada à mão. A tinta é rústica, feita com as cinzas da floresta coletadas por brigadistas florestais.</p>
+  <p class="eyebrow" data-en="Handmade">Feitas à mão</p>
+  <h2 style="color:#f2f2ef" data-en="The residue of an environmental crime becomes the stroke of your message.">O resíduo do crime ambiental vira o traço da sua mensagem.</h2>
+  <p style="color:#cfcfca" data-en="A tool for speaking out. Each pen is assembled by hand. The ink is rustic, made with forest ashes collected by forest firefighters.">Uma ferramenta de denúncia. Cada caneta é montada à mão. A tinta é rústica, feita com as cinzas da floresta coletadas por brigadistas florestais.</p>
  </div>
 </div></section>
 
 <section class="sec"><div class="in">
- <p class="eyebrow">Uma pergunta</p>
- <h2 style="color:#f2f2ef">O que você tem a dizer?</h2>
- <p class="lead" style="color:#cfcfca">Você, enquanto natureza, enquanto floresta, o que tem a dizer neste momento? Responda do seu jeito, com desenho, poema, carta ou o que for, e marque <b>@cinzasdafloresta</b>.</p>
+ <p class="eyebrow" data-en="A question">Uma pergunta</p>
+ <h2 style="color:#f2f2ef" data-en="What do you have to say?">O que você tem a dizer?</h2>
+ <p class="lead" style="color:#cfcfca" data-en="You, as nature, as forest, what do you have to say right now? Answer in your own way, with a drawing, a poem, a letter or anything else, and tag &lt;b&gt;@cinzasdafloresta&lt;/b&gt;.">Você, enquanto natureza, enquanto floresta, o que tem a dizer neste momento? Responda do seu jeito, com desenho, poema, carta ou o que for, e marque <b>@cinzasdafloresta</b>.</p>
  <div class="duo">
-  <img class="foto r43" src="img/criar-01.jpg" width="2000" height="1500" alt="Mãos segurando canetas Cinzas da Floresta" loading="lazy">
-  <img class="foto r43" src="img/criar-02.jpg" width="2000" height="1500" alt="Várias mãos segurando canetas Cinzas da Floresta" loading="lazy">
+  <img class="foto r43" src="img/criar-01.jpg" width="2000" height="1500" alt="Mãos segurando canetas Cinzas da Floresta" data-en-alt="Hands holding Cinzas da Floresta pens" loading="lazy">
+  <img class="foto r43" src="img/criar-02.jpg" width="2000" height="1500" alt="Várias mãos segurando canetas Cinzas da Floresta" data-en-alt="Several hands holding Cinzas da Floresta pens" loading="lazy">
  </div>
 </div></section>
 
 <section class="sec como"><div class="in">
- <p class="eyebrow">De onde vem</p>
- <h2 style="color:#f2f2ef">Das cinzas ao traço.</h2>
+ <p class="eyebrow" data-en="Where it comes from">De onde vem</p>
+ <h2 style="color:#f2f2ef" data-en="From ashes to stroke.">Das cinzas ao traço.</h2>
  <div class="steps">
-  <div><b>A floresta queima.</b><p>Folhas, galhos, troncos. O fogo deixa no chão, em forma de cinzas, o que era floresta.</p></div>
-  <div><b>As cinzas são recolhidas.</b><p>Brigadistas florestais ajudam a coletar um punhado de cinzas nas áreas queimadas.</p></div>
-  <div><b>Viram pigmento.</b><p>As cinzas viram tinta, como o carvão vira pigmento desde as primeiras pinturas rupestres.</p></div>
-  <div><b>Você usa.</b><p>Desenho, poema, carta, anotação. Depois, marque @cinzasdafloresta.</p></div>
+  <div><b data-en="The forest burns.">A floresta queima.</b><p data-en="Leaves, branches, trunks. The fire leaves on the ground, as ashes, what used to be forest.">Folhas, galhos, troncos. O fogo deixa no chão, em forma de cinzas, o que era floresta.</p></div>
+  <div><b data-en="The ashes are gathered.">As cinzas são recolhidas.</b><p data-en="Forest firefighters help collect a handful of ashes in the burned areas.">Brigadistas florestais ajudam a coletar um punhado de cinzas nas áreas queimadas.</p></div>
+  <div><b data-en="They become pigment.">Viram pigmento.</b><p data-en="The ashes become ink, just as charcoal has been a pigment since the first cave paintings.">As cinzas viram tinta, como o carvão vira pigmento desde as primeiras pinturas rupestres.</p></div>
+  <div><b data-en="You use it.">Você usa.</b><p data-en="Drawing, poem, letter, note. Then tag @cinzasdafloresta.">Desenho, poema, carta, anotação. Depois, marque @cinzasdafloresta.</p></div>
  </div>
- <figure class="cred" style="margin-top:44px"><img class="foto r169" src="img/brig-01.jpg" width="1600" height="900" alt="Mão com luva de brigadista despeja cinzas num saco plástico, segurado pela mão de Mundano, em área de floresta queimada" loading="lazy"><figcaption>Foto: Cubano</figcaption></figure>
+ <figure class="cred" style="margin-top:44px"><img class="foto r169" src="img/brig-01.jpg" width="1600" height="900" alt="Mão com luva de brigadista despeja cinzas num saco plástico, segurado pela mão de Mundano, em área de floresta queimada" data-en-alt="A forest firefighter's gloved hand pours ashes into a plastic bag held by Mundano, in a burned forest area" loading="lazy"><figcaption data-en="Photo: Cubano">Foto: Cubano</figcaption></figure>
 </div></section>
 
 <section class="sec brig"><div class="in">
- <p class="eyebrow">Quem apaga o fogo</p>
- <h2 style="color:#f2f2ef">Entre o fogo e a floresta.</h2>
- <p class="lead" style="color:#cfcfca">É onde ficam os brigadistas florestais, quase sempre longe dos olhos de todo mundo. Enfrentam as chamas por dias seguidos, abrem aceiros, protegem comunidades e nascentes. São invisíveis e fundamentais, ainda mais nos combates durante o Super El Niño: um fenômeno natural, amplificado pela ganância humana.</p>
+ <p class="eyebrow" data-en="Who puts out the fire">Quem apaga o fogo</p>
+ <h2 style="color:#f2f2ef" data-en="Between the fire and the forest.">Entre o fogo e a floresta.</h2>
+ <p class="lead" style="color:#cfcfca" data-en="That is where forest firefighters stand, almost always far from everyone's eyes. They face the flames for days on end, cut firebreaks, protect communities and springs. They are invisible and essential, even more so in the fights during the Super El Niño: a natural phenomenon, amplified by human greed.">É onde ficam os brigadistas florestais, quase sempre longe dos olhos de todo mundo. Enfrentam as chamas por dias seguidos, abrem aceiros, protegem comunidades e nascentes. São invisíveis e fundamentais, ainda mais nos combates durante o Super El Niño: um fenômeno natural, amplificado pela ganância humana.</p>
  <div class="brig3">
-  <figure class="cred"><img class="foto r169" src="img/brig-02.jpg" width="1600" height="900" alt="Dois brigadistas florestais com equipamento caminham por mata queimada" loading="lazy"><figcaption>Foto: Cubano</figcaption></figure>
-  <figure class="cred"><img class="foto r34" src="img/brig-03.jpg" width="800" height="1067" alt="Brigadista florestal despeja cinzas num saco e levanta uma nuvem de pó" loading="lazy"><figcaption>Foto: Augusto Dauster</figcaption></figure>
-  <figure class="cred"><img class="foto r34" src="img/brig-04.jpg" width="900" height="1200" alt="Brigadista florestal agachado mostra as mãos cheias de cinzas" loading="lazy"><figcaption>Foto: Augusto Dauster</figcaption></figure>
+  <figure class="cred"><img class="foto r169" src="img/brig-02.jpg" width="1600" height="900" alt="Dois brigadistas florestais com equipamento caminham por mata queimada" data-en-alt="Two forest firefighters with gear walk through burned woodland" loading="lazy"><figcaption data-en="Photo: Cubano">Foto: Cubano</figcaption></figure>
+  <figure class="cred"><img class="foto r34" src="img/brig-03.jpg" width="800" height="1067" alt="Brigadista florestal despeja cinzas num saco e levanta uma nuvem de pó" data-en-alt="A forest firefighter pours ashes into a bag, raising a cloud of dust" loading="lazy"><figcaption data-en="Photo: Augusto Dauster">Foto: Augusto Dauster</figcaption></figure>
+  <figure class="cred"><img class="foto r34" src="img/brig-04.jpg" width="900" height="1200" alt="Brigadista florestal agachado mostra as mãos cheias de cinzas" data-en-alt="A crouching forest firefighter shows his hands full of ashes" loading="lazy"><figcaption data-en="Photo: Augusto Dauster">Foto: Augusto Dauster</figcaption></figure>
  </div>
 </div></section>
 
 <section class="sec fim"><div class="in">
- <h2>Dentro das canetas tem florestas.</h2>
- <p class="lead">O kit, com duas canetas e quatro frasconetes de cinzas, ou a caneta avulsa nas três cores.</p>
- <a class="btn" href="https://mundano.com.br/cinzas-da-floresta/">Ver as canetas</a>
+ <h2 data-en="Inside the pens, there are forests.">Dentro das canetas tem florestas.</h2>
+ <p class="lead" data-en="The kit, with two pens and four vials of ashes, or the single pen in three colors.">O kit, com duas canetas e quatro frasconetes de cinzas, ou a caneta avulsa nas três cores.</p>
+ <a class="btn" href="https://mundano.com.br/cinzas-da-floresta/" data-en="See the pens">Ver as canetas</a>
 </div></section>
 </main>
 <footer class="foot">Mundano · Parede Viva</footer>
+<script>
+(function(){
+ var T={pt:document.title,en:"Cinzas da Floresta Pens"};
+ var D=document,b=D.getElementById("lang"),q=function(s){return [].slice.call(D.querySelectorAll(s))};
+ var tx=q("[data-en]"),al=q("[data-en-alt]");
+ tx.forEach(function(e){e._pt=e.innerHTML});al.forEach(function(e){e._pt=e.alt});
+ function set(l,save){
+  var en=l==="en";
+  tx.forEach(function(e){e.innerHTML=en?e.getAttribute("data-en"):e._pt});
+  al.forEach(function(e){e.alt=en?e.getAttribute("data-en-alt"):e._pt});
+  D.documentElement.lang=en?"en":"pt-BR";D.title=en?T.en:T.pt;
+  b.textContent=en?"PT":"EN";b.setAttribute("aria-label",en?"Ver em português":"View in English");
+  if(save){try{localStorage.setItem("lang",l)}catch(x){}}
+ }
+ var l=null;try{l=new URLSearchParams(location.search).get("lang")}catch(x){}
+ if(!l){try{l=localStorage.getItem("lang")}catch(x){}}
+ if(!l){l=/^pt/i.test(navigator.language||"pt")?"pt":"en"}
+ if(l==="en")set("en",false);
+ b.addEventListener("click",function(){set(D.documentElement.lang==="en"?"pt":"en",true)});
+})();
+</script>
 </body></html>
